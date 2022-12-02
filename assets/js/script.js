@@ -125,12 +125,6 @@ function toto() {
 // carousel 
 
 
-$('.carousel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-});
           
 
 fetchTvShows().then(showsJson => shows(showsJson))
