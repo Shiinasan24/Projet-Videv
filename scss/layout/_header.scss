@@ -1,0 +1,67 @@
+
+// HEADER
+.header {
+    padding: 0.3rem 3rem;
+    overflow: hidden;
+    position: relative;
+
+    & img {
+        width: 100px;
+    }
+
+    & .headerNav {
+        gap: 5vw;
+    }
+}
+
+// BURGER
+.burger {
+    gap: 5px;
+    border: solid 3px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+
+    & div {
+        background-color: black;
+        width: 35px;
+        height: 4px;
+    }
+}
+
+
+// MenuNav 
+
+.menu {
+    position: absolute;
+    top: 37px;
+    right: 112px;
+    z-index: 1000;
+    overflow: hidden;
+
+    & ul {
+        border: solid 3px black;
+        padding: 0.5rem 3rem;
+        background-color: rgb(241, 241, 241);
+        gap: 2vw;
+    }
+}
+
+.menuOutIn {
+    animation: menuOutIn 1s forwards;
+}
+
+@keyframes menuOutIn {
+    from {
+        width: 0%;
+        // opacity: 0%;
+    }
+    50% {
+        // opacity: 25%;
+    }
+    to {
+        width: 15%;
+        // opacity: 100%;
+    }
+}

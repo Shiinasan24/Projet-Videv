@@ -1,0 +1,18 @@
+.btn-expand {
+    appearance: none;
+    padding: .3rem .5rem;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+    border: solid 2px white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        background-color: var(--clr-primary);
+        color: white;
+    }
+}
