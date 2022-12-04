@@ -22,6 +22,7 @@
     border-radius: 6px;
     cursor: pointer;
     overflow: hidden;
+    display: none;
 
     & div {
         background-color: black;
@@ -36,15 +37,18 @@
 .menu {
     position: absolute;
     top: 37px;
-    right: 112px;
+    left: 70px;
+    width: 0;
     z-index: 1000;
     overflow: hidden;
+    display: none;
 
     & ul {
         border: solid 3px black;
-        padding: 0.5rem 3rem;
-        background-color: rgb(241, 241, 241);
+        padding: 0.5rem 1rem;
         gap: 2vw;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -55,13 +59,8 @@
 @keyframes menuOutIn {
     from {
         width: 0%;
-        // opacity: 0%;
-    }
-    50% {
-        // opacity: 25%;
     }
     to {
-        width: 15%;
-        // opacity: 100%;
+        width: 50%;
     }
 }

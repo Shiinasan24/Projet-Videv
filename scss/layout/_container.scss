@@ -20,6 +20,10 @@
     justify-content: space-between;
 }
 
+.f-start {
+    justify-content: flex-start;
+}
+
 .f-center {
     justify-content: center;
     align-items: center;
@@ -31,6 +35,10 @@
 
 .text-align {
     text-align: center;
+}
+
+.text-start {
+    text-align: start;
 }
 
 .mb3 {
@@ -52,8 +60,8 @@
 }
 
 .cutoff-text {
-    --max-lines : 20;
-
+    --max-lines : 17;
+    
     width: 100%;
 
     display: -webkit-box;
